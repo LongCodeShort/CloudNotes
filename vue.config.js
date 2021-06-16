@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: '/CloudNotes/',
-  outputDir: 'desc',
+  outputDir: 'dosc',
   productionSourceMap: false,
   css: {
     modules: true
