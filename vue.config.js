@@ -3,6 +3,22 @@ module.exports = {
   outputDir: 'dosc',
   productionSourceMap: false,
   css: {
-    modules: true
+    extract: true,
+    sourceMap: false,
+    requireModuleExtension: true
+  },
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      template: 'public/index.html',
+      filename: 'index.html',
+      title: 'Index Page'
+    },
+    error: {
+      entry: 'src/main.js',
+      template: 'public/index.html',
+      filename: '404.html',
+      title: '404 Page'
+    }
   }
 }
