@@ -5,7 +5,12 @@ module.exports = {
   css: {
     extract: true,
     sourceMap: false,
-    requireModuleExtension: true
+    // requireModuleExtension: true,
+    loaderOptions: {
+      sass: {
+        prependData: '@import "~@/assets/styles/variables.scss";'
+      }
+    }
   },
   pages: {
     index: {
