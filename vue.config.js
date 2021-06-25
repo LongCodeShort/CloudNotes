@@ -1,10 +1,15 @@
 module.exports = {
-  publicPath: '/CloudNotes/',
-  outputDir: 'docs',
+  publicPath: process.env.publicPath,
+  outputDir: process.env.outputDir,
   productionSourceMap: false,
+  devServer: {
+    hot: true,
+    open: false,
+    port: 8080,
+    host: 'localhost'
+  },
   css: {
-    extract: true,
-    sourceMap: false,
+    sourceMap: process.env.NODE_ENV === 'development',
     // requireModuleExtension: true,
     loaderOptions: {
       sass: {

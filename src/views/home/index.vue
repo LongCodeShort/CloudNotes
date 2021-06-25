@@ -4,8 +4,9 @@
 </template>
 
 <script>
-import XHeader from '../components/Header'
-import XMain from '../components/Main'
+import XHeader from '../../components/header'
+import XMain from './main'
+
 export default {
   name: 'Home',
   components: {
@@ -14,6 +15,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

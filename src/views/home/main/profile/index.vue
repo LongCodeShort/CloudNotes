@@ -1,13 +1,13 @@
 <template>
-  <div class="x-label x-card">
-    <i class="el-icon-edit"></i>
-    <span>JAVA</span>
+  <div class="x-card x-profile">
+    本地书签
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'index',
+  name: 'X-Profile',
   data () {
     return {}
   },
@@ -18,6 +18,8 @@ export default {
 
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .x-profile {
+    height: 100%;
+  }
 </style>
