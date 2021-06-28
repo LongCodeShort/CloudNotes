@@ -34,14 +34,13 @@ export default {
       isActive: false
     }
   },
-  created () {
-  },
   methods: {
     handleClick () {
       this.$router.push(this.url)
     },
-    handleCtrlClick (e) {
-      console.log(2)
+    handleCtrlClick () {
+      const { href } = this.$router.resolve(this.url)
+      window.open(href, '_blank')
     }
   }
 }
@@ -55,7 +54,7 @@ export default {
     margin: 10px 10px 0 0;
     padding: 0;
     overflow: hidden;
-    background: #ffffff;
+    background: $color-background-default;
     display: flex;
     flex-wrap: nowrap;
     .icon{
@@ -73,7 +72,7 @@ export default {
   .is-active {
     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
     .title {
-      color: #409EFF;
+      color: $color-hover-blue;
     }
   }
 </style>

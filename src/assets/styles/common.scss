@@ -1,5 +1,25 @@
+.x-design {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: $color-font-3;
+}
+
 .x-card {
   border-radius: 5px;
   border: 1px solid $color-border-0;
   padding: 0 16px;
+}
+
+.x-error-page {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: $color-background-default;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }

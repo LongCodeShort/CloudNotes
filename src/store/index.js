@@ -1,12 +1,8 @@
 import { createStore } from 'vuex'
+import bookmarks from './bookmarks'
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    bookmarks: bookmarks
   }
 })

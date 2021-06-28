@@ -10,7 +10,7 @@ module.exports = {
   },
   css: {
     sourceMap: process.env.NODE_ENV === 'development',
-    // requireModuleExtension: true,
+    requireModuleExtension: true,
     loaderOptions: {
       sass: {
         prependData: '@import "~@/assets/styles/variables.scss";'
@@ -22,13 +22,13 @@ module.exports = {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Index Page'
+      title: '云笔记'
     },
     error: {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: '404.html',
-      title: '404 Page'
+      title: '云笔记'
     }
   }
 }

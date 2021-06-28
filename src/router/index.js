@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/home/index'
-import Article from '../views/note'
+import Note from '../views/note'
+import Page404 from '../components/error/404'
+import { getChildRoutes } from '../data/catalog'
 
 const routes = [
   {
@@ -9,9 +11,16 @@ const routes = [
     component: Home
   },
   {
-    path: '/-',
+    path: '/:note',
     name: 'Node',
-    component: Article
+    component: Note,
+    props: true,
+    children: getChildRoutes()
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: Page404
   }
 ]
 
